@@ -1,0 +1,20 @@
+*{
+  box-sizing: 0;
+  padding: 0;
+  margin: 0;
+}
+html body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f0f0f0; /* O tu color o imagen de fondo */
+  background-image: url('/path/to/your/image.jpg');
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+}
