@@ -9,7 +9,7 @@ const SectionPrice: FunctionComponent<Prop>=({className})=>{
           allowFullScreen 
         />
         <div className="form-container">
-          <h3>Solicitar un Presupuesto</h3>
+          <h3 className="title-h3">Solicitar un Presupuesto</h3>
           <form>
             <input type="text" placeholder="Nombre" required />
             <input type="email" placeholder="Email" required />

@@ -2,9 +2,8 @@ import styled from "styled-components";
 import Header from "./header.component";
 
 export default styled(Header)`
-background: #007BFF;
-  padding: 15px 0;
-  color: white;
+  background-color: black;
+  padding: 15px 0; 
   text-align: center;
 
   nav .container {
@@ -21,12 +20,13 @@ background: #007BFF;
   }
 
   a {
+    z-index:3;
     color: white;
     text-decoration: none;
     transition: color 0.3s;
 
     &:hover {
-      color: #ffdd57;
+      color: red;
     }
   }
 `

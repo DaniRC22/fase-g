@@ -2,12 +2,22 @@ import styled from "styled-components";
 import SectionPrice from "./section-price.component";
 
 export default styled(SectionPrice)`
-display: flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   padding: 40px 20px;
-  background-color: #f0f0f0; /* Fondo claro */
+  // background-color: #f0f0f0; /* Fondo claro */
   text-align: center;
+
+  .form-container{
+    border: solid;
+    border-radius: 1rem;
+    padding: 10px;
+  }
+  .title-h3{
+    border: solid;
+    border-radius: 1rem;
+  }
 
   @media (min-width: 768px) {
     flex-direction: row; /* Cambia a fila en pantallas más grandes */
@@ -48,7 +58,7 @@ display: flex;
 
     button {
       padding: 10px;
-      background-color: #007BFF; /* Botón azul */
+      background-color: black; /* Botón azul */
       color: white;
       border: none;
       border-radius: 5px;
@@ -56,7 +66,7 @@ display: flex;
       transition: background-color 0.3s;
 
       &:hover {
-        background-color: #0056b3; /* Color más oscuro al pasar el ratón */
+        background-color: red; /* Color más oscuro al pasar el ratón */
       }
     }
   }`

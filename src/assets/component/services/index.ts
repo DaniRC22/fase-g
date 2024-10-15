@@ -3,7 +3,7 @@ import Services from "./services.component";
 
 export default styled(Services)`
 padding: 40px 20px;
-  background-color: #f9f9f9; /* Fondo claro */
+  // background-color: #f9f9f9; /* Fondo claro */
   text-align: center;
 
   h2 {
@@ -23,7 +23,7 @@ padding: 40px 20px;
     }
 
     .service-card {
-    background: white; /* Fondo blanco para las tarjetas */
+    // background: white; /* Fondo blanco para las tarjetas */
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -36,10 +36,12 @@ padding: 40px 20px;
     }
 
     h3 {
-      color: #007BFF; /* Color azul para los títulos */
+      color: black; /* Color azul para los títulos */
       margin: 10px 0;
     }
-
+    h3::shadow{
+      color: red;
+    }
     p {
       color: #666; /* Texto gris */
       margin-bottom: 15px;

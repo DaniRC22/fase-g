@@ -1,20 +1,34 @@
-*{
-  box-sizing: 0;
+* {
+  box-sizing: border-box; /* Cambiado a border-box */
   padding: 0;
   margin: 0;
-}
-html body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  
   font-family: 'Poppins', sans-serif;
 }
 
-body {
-  background-color: #f0f0f0; /* O tu color o imagen de fondo */
-  background-image: url('/path/to/your/image.jpg');
+body, html {
+  height: 100%;
+}
+
+.background {
+  position: relative;
+}
+
+.background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('assets/fondo.jpg');
   background-size: cover;
   background-position: center;
-  font-family: Arial, sans-serif;
+  opacity: 0.5; /* Ajusta la transparencia aquí */
+  z-index: 1; /* Mantener la imagen detrás del contenido */
+}
+
+.content {
+  position: relative;
+  z-index: 2; /* Texto encima de la superposición */
+  text-align: center; /* Centrar texto si es necesario */
 }

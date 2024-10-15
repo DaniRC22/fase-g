@@ -16,6 +16,16 @@ const projectsData = [
       description: "Mantenimiento de instalaciones eléctricas en un local comercial.",
       imageUrl: "https://www.ejemplo.com/imagen3.jpg", // Reemplazar con la URL de la imagen
     },
+    {
+      title: "Mantenimiento de maquinas",
+      description: "Mantenimiento de instalaciones eléctricas en un local comercial.",
+      imageUrl: "https://www.ejemplo.com/imagen3.jpg", // Reemplazar con la URL de la imagen
+    },
+    {
+      title: "instalaciones",
+      description: "Mantenimiento de instalaciones eléctricas en un local comercial.",
+      imageUrl: "https://www.ejemplo.com/imagen3.jpg", // Reemplazar con la URL de la imagen
+    },
   ];
 
 const Project: FunctionComponent<Prop>=({className})=>{

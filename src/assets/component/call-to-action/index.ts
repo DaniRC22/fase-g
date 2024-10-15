@@ -3,7 +3,7 @@ import CallToAction from "./call-to-action.component";
 
 export default styled(CallToAction)`
 padding: 40px 20px;
-  background: #007BFF; /* Fondo azul */
+  // background: #007BFF; /* Fondo azul */
   color: white;
   text-align: center;
 
