@@ -6,7 +6,7 @@ const CallToAction: FunctionComponent<Prop>=({className})=>{
         <div className="container">
           <h2>¿Necesitas un presupuesto?</h2>
           <p>contactanos ahora y te damos una solucion rapida</p>
-          <a href="">contactanos</a>
+          <a href= "#">contactanos</a>
         </div>
       </section>
     )

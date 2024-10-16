@@ -19,7 +19,7 @@ const Services: FunctionComponent<Props>=({className})=>{
     return(
       <section className={className} id="services">
         <div className="container">
-          <h2>Nuestros servicios</h2>
+          <h2 className="futuristic-title">Nuestros servicios</h2>
           <div className="services">
             {servicesData.map((services, index) => (
               <div className="service-card" key={index}> 
