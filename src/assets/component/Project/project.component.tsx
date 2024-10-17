@@ -1,7 +1,6 @@
 import { FunctionComponent } from "react";
 import fondo from "../../fondo.jpg"
 
-const img = fondo;
 const projectsData = [
     {
       title: "Instalación de Iluminación",
