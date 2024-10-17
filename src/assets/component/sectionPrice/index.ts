@@ -2,79 +2,11 @@ import styled from "styled-components";
 import SectionPrice from "./section-price.component";
 
 export default styled(SectionPrice)`
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 40px 20px;
-   background-color: #f0f0f0; Fondo claro
-  text-align: center;
-
-  .form-container{
-    border: solid;
-    border-radius: 1rem;
-    padding: 10px;
-  }
-  .title-h3{
-    border: solid;
-    border-radius: 1rem;
-  }
-
-  @media (min-width: 768px) {
-    flex-direction: row; Cambia a fila en pantallas más grandes
-    justify-content: space-around; Espacio entre los elementos
-  }
-
-  iframe {
-    width: 100%;
-    height: 300px; Altura del video
-    border: none;
-
-    @media (min-width: 768px) {
-      width: 45%; Ancho en pantallas más grandes
-      height: 400px; Aumentar altura en pantallas más grandes
-    }
-  }
-
-  .form-container {
-    width: 100%;
-    margin-top: 20px; Margen superior en móviles
-    
-    @media (min-width: 768px) {
-      width: 45%; Ancho en pantallas más grandes
-      margin-top: 0; Eliminar margen superior */
-    /* }
-
-    h3 {
-      margin-bottom: 15px;
-    }
-
-    input, textarea {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 15px; */
-      /* border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-
-    button {
-      padding: 10px;
-      background-color: black; Botón azul
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-
-      &:hover {
-        background-color: red; Color más oscuro al pasar el ratón
-      }
-    } */
-  /* } */
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 40px 20px;
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(255, 0, 0, 0.5)); /* Degradado oscuro a rojo */
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(255, 0, 0, 0.5));
   color: white;
   text-align: center;
   position: relative;
@@ -124,12 +56,12 @@ input, textarea {
   padding: 12px;
   border: none; /* Sin borde */
   border-radius: 5px; /* Bordes redondeados */
-  outline: none; /* Sin borde al seleccionar */
+  outline: none; /*Sin borde al seleccionar*/
 }
 
 input::placeholder,
 textarea::placeholder {
-  color: rgba(255, 255, 255, 0.7); /* Color del placeholder */
+  color: rgba(150, 150, 150, 0.7); /* Color del placeholder */
 }
 
 button {

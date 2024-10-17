@@ -1,5 +1,6 @@
 import { FunctionComponent } from "react";
 import fondo from "../../fondo.jpg"
+import { Helmet } from "react-helmet-async";
 
 const projectsData = [
     {
@@ -32,6 +33,10 @@ const projectsData = [
 const Project: FunctionComponent<Prop>=({className})=>{
     return(
         <section className={className} id="projects">
+          <Helmet>
+        <title>Proyectos Realizados - Fase-G</title>
+        <meta name="description" content="Descubre nuestros proyectos realizados en Fase-G, mostrando la calidad y variedad de nuestros servicios." />
+      </Helmet>
         <h2>Trabajos Realizados</h2>
         <div className="projects-container">
           {projectsData.map((project, index) => (

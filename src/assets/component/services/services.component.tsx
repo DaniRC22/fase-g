@@ -1,4 +1,5 @@
 import { FunctionComponent } from "react";
+import { Helmet } from "react-helmet-async";
 
 const servicesData = [
   {
@@ -18,6 +19,11 @@ const servicesData = [
 const Services: FunctionComponent<Props>=({className})=>{
     return(
       <section className={className} id="services">
+        
+        <Helmet>
+        <title>Nuestros Servicios en Fase-G</title>
+        <meta name="description" content="Descubre la variedad de servicios que ofrecemos en Fase-G, desde mantenimiento hasta reparaciones." />
+      </Helmet>
         <div className="container">
           <h2 className="futuristic-title">Nuestros servicios</h2>
           <div className="services">

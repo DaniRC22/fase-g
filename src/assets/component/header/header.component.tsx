@@ -1,8 +1,15 @@
 import { FunctionComponent } from "react";
+import { Helmet } from "react-helmet-async";
 
 const Header: FunctionComponent<Prop>=({className})=>{
     return(
         <header className={className}>
+          <Helmet>
+          <title>Bienvenido a Fase-G - Servicios y Mantenimientos</title>
+        <meta name="description" content="Servicios de mantenimiento para hogares y empresas de alto nivel." />
+        <meta property="og:title" content="Fase-G - Mantenimientos Eficientes" />
+        <meta property="og:description" content="Descubre nuestros servicios de mantenimiento y reparación." />
+      </Helmet>
         <nav>
           <div className="container">
             <div className="services">

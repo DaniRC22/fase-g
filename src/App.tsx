@@ -13,13 +13,10 @@ const App:FunctionComponent=()=> {
       <Helmet>
         <title>Servicios de Mantenimiento Profesionales</title>
         <meta name="description" content="Ofrecemos una amplia gama de servicios de mantenimiento para hogares, negocios, fabricas y empresas." />
-        <meta name="keywords" content="mantenimiento, reparación, servicios, plomería, electricidad, construccion" />
-        <meta property="og:title" content="Servicios de Mantenimiento Profesionales" />
+        <meta property="og:title" content="Servicios de Mantenimiento profesionales de alto nivel" />
         <meta property="og:description" content="Mantenimiento y reparaciones eficientes para hogares, negocios, fabricas y empresas." />
         <meta property="og:type" content="website" />
-        {/* url de la empresa */}
         <meta property="og:url" content="https://www.ejemplo.com" />
-        {/* logo */}
         <meta property="og:image" content="https://www.ejemplo.com/imagen.jpg" />
       </Helmet>
       <Header/>
