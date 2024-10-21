@@ -9,21 +9,25 @@ const PUBLIC_KEY = import.meta.env.VITE_PUBLIC_KEY!;
 
 const SectionPrice: FunctionComponent<Prop>=({className})=>{
   const [user, setUser] = useState<userForm>({name:'', email: '', message: ''})
-  const form = useRef()
 
-  const sendEmail = (e: React.FormEvent<HTMLFormElement>)=>{
+  const sendEmail = async (e: React.FormEvent<HTMLFormElement>)=>{
     e.preventDefault();
-    
-    emailjs.sendForm(ID_SERVICE, ID_TEMPLATE, form.current, PUBLIC_KEY)
-    .then((response) => {
-      console.log(PUBLIC_KEY)
-      console.log('Email sent successfully:', response.status, response.text);
-      alert('enviado')
-      setUser({ name: '', email: '', message: '' }); // Limpiar el formulario
-    })
-    .catch((error) => {
-      console.error('Failed to send email:', error);
-    });
+
+    const emailjsData =  {
+      from_name: user.name,
+      to_name: user.email,
+      message: user.message,
+    }
+    try{
+       await emailjs.send(ID_SERVICE, ID_TEMPLATE, emailjsData, PUBLIC_KEY)
+      .then((response) => {
+        console.log('Email sent successfully:', response.status, response.text);
+        alert('enviado')
+        setUser({ name: '', email: '', message: '' }); // Limpiar el formulario
+      })
+    }catch (error){
+      console.error('Failed to send email', error)
+    }
 };
   
     return(
